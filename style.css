@@ -1,0 +1,105 @@
+body{
+    background-color: #F2F2F7;
+    font-size: 14px;
+
+}
+p{
+    font-size: 14;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+button{
+    border: 0;
+    background-color: transparent;
+}
+button:focus{
+    outline: none;
+    
+}
+.content{    
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: left;
+}
+
+.box{
+    
+    background-color: white;
+    width: 467px;
+    height: 36px;
+    border-radius: 10px;
+    text-align: center;
+}
+.bankas{
+    position: relative;
+    background-color: transparent;
+    float: left;
+    width: 50%;
+    height: 36px;
+    line-height: 36px;    
+    padding: 0%;
+    cursor:pointer;
+    color: #999999;
+    z-index: 1;
+    
+}
+.activeBank{
+    height: 36px;
+    background-color: #44AD4A;
+    color: white;    
+    border-radius: 10px;
+    
+}
+
+
+.carousel{
+    margin-top: 18px;
+    margin-bottom: 23px;
+    height: 70px;
+    line-height: 70px;
+    
+}
+.carousel-indicators{
+    
+    margin-left: 30%;
+    margin-right: 30%;
+    
+    
+    margin-bottom: 0;
+}
+.carousel-indicators li {
+    background-color: #999999;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+.bankLogo{
+    margin-top: 7px;
+    height: 38px;
+    vertical-align: top;
+}
+.reciever{
+    font-size: 14px;
+    height: 51px;
+    line-height: 51px;
+    text-align: left;
+}
+.bankname{
+    float:right;
+    color: #999999;
+    padding-right: 16px;
+}
+.inactive{
+    display: none;
+}
+.name{
+    float: left;
+    padding-left:16px;
+}
+
