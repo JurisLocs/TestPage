@@ -5,12 +5,7 @@ $(document).ready(function(){
         interval: false,
       });
     
-    $(".bankas").click(function(){
-        $(this).siblings('.bankas').removeClass('activeBank');
-        $(this).addClass("activeBank");    
 
-
-    })
     $("#citadele").click(function(){       
         $(".bankname").text("Citadele") 
        
@@ -37,16 +32,21 @@ $(document).ready(function(){
     })
 
     $("#lombards").click(function(){
+        $("#banka").removeClass('activeBank');
+        $(this).addClass("activeBank"); 
         $("#myCarousel2").removeClass("inactive")
         $("#myCarousel").addClass("inactive")
-        
-        
+        $("#myCarousel2").carousel(0);
+        $(".bankname").text("Luminor") 
 
     })
 
     $("#banka").click(function(){
+        $("#lombards").removeClass('activeBank');
+        $(this).addClass("activeBank"); 
         $("#myCarousel").removeClass("inactive")
         $("#myCarousel2").addClass("inactive")
-        
+        $("#myCarousel").carousel(0);
+        $(".bankname").text("Citadele")
     })
 })
